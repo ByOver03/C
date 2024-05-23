@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Subasta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:noNamespaceSchemaLocation="./Robert_Torrent_Nahuel_XSD2.4.xsd">
-<propietario></propietario>
-<precio>2305.25</precio>
-<precio-minimo>125.00</precio-minimo>
-</Subasta>

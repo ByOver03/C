@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xml1>
-    <triangulo base="7" altura="5"></triangulo>
-    <triangulo base="2" altura="6"></triangulo>
-    <triangulo base="3" altura="3"></triangulo>
-</xml1>
-<!-- En este xml lo que estaba mal era que las etiquetas triangulo no estaban cerradas
-Y que las tres etiquetas tienenq ue estar dentro de otra etiqueta-->
