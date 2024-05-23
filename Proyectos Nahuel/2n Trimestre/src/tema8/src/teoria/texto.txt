@@ -1,7 +1,0 @@
-crear jun fichero de texto que se llame numeros.txt dentro del fichero va a haber numeros decimales(7.10 -8.75 100.25 -1.50)
-
-Abriremos el txt y leeremos ese numero
-
-Clase String utilizaremos el split()
-
-y con el double utilizaremos el valuesof()
