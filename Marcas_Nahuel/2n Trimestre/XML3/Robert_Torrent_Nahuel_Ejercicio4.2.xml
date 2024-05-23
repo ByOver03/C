@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<numeros>
+    <uno letra1="u" letra2="n" letra3="o">1</uno>
+    <uno letra1="d" letra2="o" letra3="s">22</uno>
+    <uno letra1="s" letra2="e" letra3="i" letra4="s">666666</uno>
+</numeros>
+<!-- En este documento lo que estaba mal era que las etiquetas no estaban bien nombradas
+Y tampoco estaban bien cerradas
+Tambien que los atributos estaban todos repetidos cosa que no se puede-->

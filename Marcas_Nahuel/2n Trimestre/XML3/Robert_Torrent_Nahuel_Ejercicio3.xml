@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<colores>
+    <linea>
+        <mezcla mezcla="rojo y amarillo"></mezcla>
+        <resultado>naranja</resultado>
+    </linea>
+    <linea>
+        <mezcla mezcla="negro y blanco"></mezcla>
+        <resultado>gris</resultado>
+    </linea>
+    <linea>
+        <mezcla mezcla="amarillo, azul, y blanco"></mezcla>
+        <resultado>verde claro</resultado>
+    </linea>
+</colores>

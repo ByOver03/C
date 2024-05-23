@@ -1,0 +1,68 @@
+algorisme Principal
+
+    const
+        MAX <- 100
+    ficonst
+
+    tipus
+        persona: registre (
+        dni: cadena,
+        nom: cadena,
+        adreça: cadena,
+        edat: enter
+        )
+        t_persona: taula [1..MAX] de persona
+    fitipus
+
+    var
+        dni, nom, adreça: cadena
+        edat, posició: enter
+        persones: t_persona
+    fivar
+
+    funció Buscar (var persones: t_persona, dni:cadena,
+        nom:cadena, adreça: cadena, edat: enter):enter
+
+        var
+            i: enter
+            trobat: lògic
+        fivar
+
+        trobat <- fals
+        i<- 1
+
+        mentre (i <= MAX) AND (trobat = fals)
+            si persones[i].dni = dni aleshores
+            trobat <- cert
+            sino
+            i <- i + 1
+            fisi
+        fimentre
+
+        nom <- persones[i].nom
+        adreça <- persones[i].adreça
+        edat <- persones[i].edat
+        retorna i
+    fifunció
+
+    procediment Modificar(p: persona)
+        llegir(nom,adreça,edat)
+        p.nom <- nom
+        p.adreça <- adreça
+        p.edat <- edat
+    fiprocediment
+
+    llegir(dni)
+    posició <- Buscar(persones, dni, nom, adreça, edat)
+    Modificar(persones[posicio])
+    escriure("Dades originals: ", nom, adreça, edat)
+    escriure("Dades noves: ", persones[posició].nom,
+    persones[posició].adreça, persones[posició].edat)
+
+fialgorisme
+
+A- dni: "12345678A" | nom: "Josep Vila" | adreça= "C/Barcelona, 10" | edat: 30 --> ja que el procediment modificar nomes modifica el nom, i no el dni
+el primer escriure  no escribira nada ya que no tiene los datos guardados en la funcion de buscar correctamente, el segunto esbira los datos sin haberse modificado ya que el procedimiento
+B- 
+
+C-
