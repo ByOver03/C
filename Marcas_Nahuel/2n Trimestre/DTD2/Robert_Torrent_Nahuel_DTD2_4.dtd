@@ -1,0 +1,9 @@
+<!ELEMENT pedido (libro+, cuaderno+, lapiz+)>
+<!ELEMENT libro (titulo)>
+<!ELEMENT cuaderno (num_hojas)>
+<!ELEMENT lapiz (numero)>
+
+<!ATTLIST libro titulo ID #REQUIRED>
+<!ATTLIST cuaderno num_hojas ID #REQUIRED>
+
+<!ELEMENT numero (#PCDATA)>

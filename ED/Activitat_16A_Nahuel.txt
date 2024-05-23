@@ -1,0 +1,43 @@
+algorisme EliminarRepetitsA
+    tipus
+        TElements : taula[0..MAX-1] de enter
+    fitipus
+    var
+        i : enter
+        element :  TElements
+    fivar
+
+    per i ∈ [1.. MAX-1] pas 1
+        si element[i] = element[i-1] aleshores
+            element[i] <-- 0
+        fisi
+    fiper
+
+fialgorisme
+
+algorisme EliminarRepetitsB
+    tipus
+        TElements : taula[0..MAX-1] de enter
+    fitipus
+    var
+        i : enter
+        aux : enter
+        element :  TElements
+    fivar
+
+    per i ∈ [1.. MAX-1] pas 1
+        si element[i] < element[i-1] aleshores
+            aux <-- element[i]
+            element[i] <-- elment[i-1]
+            element[i-1] <-- aux
+            i <-- 0
+        fisi
+    fiper
+
+    per i ∈ [1.. MAX-1] pas 1
+        si element[i] = element[i-1] aleshores
+            element[i] <-- 0
+        fisi
+    fiper
+
+fialgorisme

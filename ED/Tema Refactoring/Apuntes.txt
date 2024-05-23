@@ -1,0 +1,4 @@
+Magic numbers/Extrac constand
+    consiste en modificar valores numericos que no se sabe para que sirven
+    se cambia de variable a constante
+

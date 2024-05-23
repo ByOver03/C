@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.enlaces{
+    width:25%;
+    height: 100%;
+    position: fixed;
+    background-color: #9A9A9A;
+}
+.lema{
+    width: 74%;
+    margin-left: 25.2%;
+    font-family: fantasy;
+    background-color: #575757;
+    font-size: 200%;
+    color: white;
+
+}
+.contenido{
+    width:45%;
+    margin-left: 26%;
+}
+.publicidad{
+    width: 20%;
+    display: flex;
+    float: right;
+    margin-right:70px ;
+
+}
+.copyright{
+    width:50%;
+    margin-right:10px ;
+    float:right;
+}

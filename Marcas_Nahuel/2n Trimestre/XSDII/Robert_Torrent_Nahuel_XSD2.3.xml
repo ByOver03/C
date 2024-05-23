@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Catalogo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="./Robert_Torrent_Nahuel_XSD2.3.xsd">
+    <pelicula>
+        <nombre>Bright</nombre>
+        <director>Jose</director>
+        <horario>15:00 - 16:30</horario>
+        <horario>16:45 - 18:15</horario>
+    </pelicula>
+    <pelicula>
+        <nombre>Percy Jackson: y el ladron del rayo</nombre>
+        <director>Iker</director>
+        <horario>18:30 - 20:30</horario>
+    </pelicula>
+</Catalogo>

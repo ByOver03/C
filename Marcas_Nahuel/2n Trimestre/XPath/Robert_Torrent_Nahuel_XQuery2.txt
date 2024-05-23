@@ -1,0 +1,29 @@
+1- //title
+2- (//cd/title)[last()-1]/text()
+3- /catalog/cd[price < 9] -- //cd[prive < "9"]/title
+4- /catalog/cd[year == 1987] -- //cd[year = "1987"]/title
+5- /catalog/cd[price < 8]
+6- /catalog/cd[price == 9.80]
+7- /catalog/cd/artist[position() == 5]
+8- /catalog/cd/country[position == last()]
+
+
+9- /root/course/time[start_time == "1:10" OR end_time=="4:00"]
+10- count(/root/course[instructor == "Wu"])
+
+
+11.1-
+11.2-
+12.1-
+12.2-
+13.1-
+13.2-
+
+
+14-
+15-
+16-
+17-
+18-
+19-
+20-

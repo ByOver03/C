@@ -1,0 +1,89 @@
+algorisme Biblioteca
+	const
+		MAC = 50000
+	ficonst
+	tipus
+		TData : registre(
+            dia: enter
+            mes: enter
+            any:enter
+        )
+        TLlibre:registre(
+            titol:cadena
+            autor:cadena
+            enPrestec: logic
+            dataPrestec: TData
+        )
+
+        taulaLlibres : taula [0.. MAX -1] de TLlibre
+    fitipus
+
+    var
+        llibre : taulaLlibres
+        data : TData
+    	opcio : enter
+        nom : cadena
+        i : enter
+    fivar
+
+    repetir
+    	escriure(“Menu: 1 - Triar llibre per autor | 2- Realitzar préstec | 3 - Tornar Llibre | 4 - Sortir”)
+    	llegir(opcio)
+
+    	si(opcio >= 1 AND opcio <= 4)aleshores
+		    casque(opcio)
+			    1 : 
+                    escriure("Diguem el nom de l'autor que vols cercar")
+                    llegir(nom)
+
+                    per i ∈ [0..MAX - 1] pas 1
+                        si llibre[i].autor = nom aleshores
+                            escriure("llibre[i].autor")
+                        fisi
+                    fiper
+			    2 :
+                    escriure("Ingresa el nom del llibre que vols")
+                    llegir(nom)
+
+                    per i ∈ [1.. MAX-1] pas 1
+                        si llibre[i].titol = nom aleshores
+                            escriure("Diguem la data del llibre que vols retirar")
+                            llegir(llibre[i].dataPrestec.dia)
+                            llegir(llibre[i].dataPrestec.mes)
+                            llegir(llibre[i].dataPrestec.any)
+                            llibre[i].enPrestec <- vertader
+                        fisi
+                    fiper
+			    3 :
+                    escriure("Escriu el titol del llibre que vols tornar")
+                    llegir(nom)
+                    
+                    per i ∈ [0..MAX - 1] pas 1
+                        si llibre[i].titol = nom aleshores
+                            llibre[i].enPrestec <- fals
+                        fisi
+                    fiper
+                4 :
+                    escriure("Has sortit")
+		    ficasque
+	    sino
+    		escriure("Has de seleccionar una opcio especificada")
+	    fisi
+    fins que (opcio=4)
+fialgorisme
+
+-Definició dels tipus de dades de l'Exercici 20
+
+tipus
+    registreAtleta : registre(
+        nom : cadena
+        cognoms : cadena
+        edat : enter
+        alçada : real
+        pais : cadena
+        marcaSalt : real
+        millorMarca : real
+    )
+
+    TAtleta : taula [0..9] de registreAtleta
+fitipus

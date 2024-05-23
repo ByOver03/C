@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<fabricant>
+    <comanda>
+        <tractor>
+            <fabricant>Manolo Lama</fabricant>
+            <data fecha="dia">16</data>
+            <data fecha="mes">01</data>
+            <data fecha="any">2024</data>
+            <fragil>False</fragil>
+            <pes unitat="kilograms">1350</pes>
+            <pes unitat="grams">250</pes>
+            <S-N>2453445485</S-N>
+        </tractor>
+        <tractor>
+            <fabricant>Kratos</fabricant>
+            <data fecha="dia">25</data>
+            <data fecha="mes">11</data>
+            <data fecha="any">2023</data>
+            <fragil>True</fragil>
+            <pes unitat="kilograms">1200</pes>
+            <pes unitat="grams">880</pes>
+            <S-N>.32145442445</S-N>
+        </tractor>
+    </comanda>
+    <comanda>
+        <tractor>
+            <fabricant>Mauricio Colmenero</fabricant>
+            <data fecha="dia">20</data>
+            <data fecha="mes">05</data>
+            <data fecha="any">2022</data>
+            <fragil>False</fragil>
+            <pes unitat="kilograms">1350</pes>
+            <pes unitat="grams">250</pes>
+            <S-N>3254641214534</S-N>
+        </tractor>
+        <tractor>
+            <fabricant>Antonio Recio</fabricant>
+            <data fecha="dia">18</data>
+            <data fecha="mes">8</data>
+            <data fecha="any">2022</data>
+            <fragil>True</fragil>
+            <pes unitat="kilograms">1200</pes>
+            <pes unitat="grams">880</pes>
+            <S-N>243544653445</S-N>
+        </tractor>
+        <tractor>
+            <fabricant>Pedro Pascal</fabricant>
+            <data fecha="dia">12</data>
+            <data fecha="mes">12</data>
+            <data fecha="any">2022</data>
+            <fragil>True</fragil>
+            <pes unitat="kilograms">1200</pes>
+            <pes unitat="grams">880</pes>
+            <S-N>08792757259407209</S-N>
+        </tractor>
+    </comanda>
+</fabricant>
