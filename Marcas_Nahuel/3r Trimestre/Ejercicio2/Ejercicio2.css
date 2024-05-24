@@ -1,72 +1,90 @@
-body {
-    width: 80%;
-    margin: 0 auto;
+#formacion li,
+#experiencia li {
+  color: #00F;
+}
+
+#formacion li strong,
+#experiencia li strong {
+  color: #000;
+}
+
+@media (min-width: 1201px) {
+  #datos {
+    float: left;
+    width: 30%;
   }
-  
-  @media (min-width: 1201px) {
-    h1 {
-      text-align: center;
-    }
-  
-    #datos, #descripcion, #contenido {
-      float: left;
-      padding: 0;
-      margin: 0;
-    }
-  
-    #datos {
-     width: 33%;
-    }
-  
-    #descripcion {
-     width: 33%;
-    }
-  
-    #contenido {
-     width: 33%;
-    }  
+
+  #curriculo {
+    float: left;
+    width: 70%;
   }
-  
-  @media (min-width: 601px) and (max-width: 1200px) {
-    h1 {
-      text-align: center;
-    }
-  
-    #datos, #principal {
-      float: left;
-      padding: 0;
-      margin: 0;
-    }
-  
-    #datos {
-     width: 30%;
-    }
-  
-    #principal {
-      width: 70%;
-    }
-  
-    #apartados {
-      list-style-type: none;
-      padding: 0;
-    }
-  
-    #apartados li {
-      float: left;
-      width: 33%;
-    }
+
+  #formacion {
+    float: left;
+    width: 50%;
   }
-  
-  @media (max-width: 600px) {
-    #datos ul {
-      padding-left: 0;
-    }
-  
-    #datos li {
-      display: inline;
-    }
-    
-    #datos li:after {
-      content: "; ";
-    }
+
+  #experiencia {
+    float: left;
+    width: 50%;
   }
+}
+
+
+@media (min-width: 601px) and (max-width: 1200px) {
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  #datos {
+    float: left;
+    width: 30%;
+  }
+
+  #curriculo {
+    float: left;
+    width: 70%;
+  }
+
+  #datos ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  #datos li+li {
+    margin-top: 10px;
+  }
+
+  #datos li strong {
+    display: block;
+  }
+}
+
+
+@media (max-width: 600px) {
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+    border-bottom: 1px solid #000;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  li+li {
+    margin-top: 10px;
+  }
+
+  li strong {
+    display: block;
+  }
+}
