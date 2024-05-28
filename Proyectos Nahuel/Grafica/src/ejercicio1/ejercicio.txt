@@ -1,0 +1,5 @@
+Hacer un inicio de sesion con los parametros:
+{Alumno}Box
+{Nombre (texto[String]) DNI (texto[String]) EDAD (Texto[int])} Box
+Nivel(RadioButton [Basica(B) / Medio(M) / Superior(S)])
+{Aceptar(Boton) Cerrar(Boton)} Box
