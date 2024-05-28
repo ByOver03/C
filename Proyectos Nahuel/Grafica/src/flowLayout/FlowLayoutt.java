@@ -5,8 +5,7 @@ import javax.swing.*;
 
 public class FlowLayoutt {
     public static void main(String[] args) {
-        JFrame frmPrincipal = new JFrame("Calculadora");
-        frmPrincipal.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        JFrame frmPrincipal = Funciones.creaFormulario("Calculadora", 1000, 500);
         JPanel pnlPrincipal=(JPanel) frmPrincipal.getContentPane();
 
         JPanel pnl = new JPanel();
