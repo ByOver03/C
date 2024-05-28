@@ -1,4 +1,4 @@
-package flowLayout;
+package layouts;
 
 
 public class Test {
@@ -11,7 +11,10 @@ public class Test {
          *      -Las zonas este y oeste se da el caso inverso
          *      -La zona central es la unica que crece por igual en todas direcciones
          * GridLayout -> Divide el contenedor en una matriz de filas y columnas
-         * BoxLayout ->
+         * BoxLayout -> solo se puede aplicar sobre un tipo de contenedor, que es de tipo Box<>
+         *      -Los controles que añadamos al box no modificaran su tamaño
+         *      -Puede ser con una linea vertical o horizontal
+         *      -Se pueden añadir espacios entre botones, tu dices el espacio entre botones
          * GridBackLayout ->
          * GrouLayout ->
          * CardLayout ->

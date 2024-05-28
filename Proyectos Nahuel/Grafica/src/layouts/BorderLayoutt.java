@@ -1,4 +1,4 @@
-package flowLayout;
+package layouts;
 
 import java.awt.BorderLayout;
 import java.awt.Font;

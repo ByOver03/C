@@ -1,4 +1,4 @@
-package flowLayout;
+package layouts;
 
 import javax.swing.*;
 import java.awt.*;
