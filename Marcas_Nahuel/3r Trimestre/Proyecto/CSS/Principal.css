@@ -7,9 +7,10 @@ ul{
     justify-content: space-around;
     flex-direction: row;
 }
-#item{
+#item a{
     background-color: gray;
-    text-decoration: none;
+    color: black; /* Hereda el color del elemento padre */
+    text-decoration: none; /* Quita el subrayado */
     
 }
 #item :hover, :focus, :active{
