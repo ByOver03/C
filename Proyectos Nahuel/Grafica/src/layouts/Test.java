@@ -15,7 +15,12 @@ public class Test {
          *      -Los controles que añadamos al box no modificaran su tamaño
          *      -Puede ser con una linea vertical o horizontal
          *      -Se pueden añadir espacios entre botones, tu dices el espacio entre botones
-         * GridBackLayout ->
+         * GridBackLayout -> Coloca componenter en filas y columnas, pero le puedes decir que agrupe filas/columnas si es necesario
+         *      -Los componentes que se metan en las celdas ocuparan su totalidad
+         * 
+         * 
+         *      -GridBagConstraints() en el .add
+         *      -aaa.add(Component comp, GridBagCOnstraints constr)
          * GrouLayout ->
          * CardLayout ->
          */
