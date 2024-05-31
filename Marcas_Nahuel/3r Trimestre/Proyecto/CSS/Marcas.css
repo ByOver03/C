@@ -110,3 +110,9 @@ header {
 .options a:hover {
     background-color: #444;
 }
+
+.contenido{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
