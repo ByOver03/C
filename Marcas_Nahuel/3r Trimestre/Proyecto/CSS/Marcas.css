@@ -116,3 +116,7 @@ header {
     margin:  auto;
     text-align: left;
 }
+.contenido a{
+    display: flex;
+    justify-content: center;
+}
