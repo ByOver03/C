@@ -3,21 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/Principal.css" type="text/css">
+    <link rel="stylesheet" href="../CSS/Marcas.css" type="text/css">
     <title>Tipos</title>
 </head>
 <body>
-    <ul>
-        <li id="item"><a href="./PaginaPrincipal.html">Inicio</a></li>
-        <li id="item"><a href="./Marcas.html">Marcas</a></li>
-        <li id="item"><a href="./Tipos.html">Tipos</a></li>
-        <li id="item" ><a href="https://cstimer.net">Cronometro</a></li>
+    <br>
+    <ul class="menu">
+        <li><a href="./PaginaPrincipal.html">Inicio</a></li>
+        <li><a href="./Marcas.html">Marcas</a>
+            <ul class="submenu">
+                <li><a href="./Rubick.html">Rubik</a></li>
+                <li><a href="#">GAN</a></li>
+                <li><a href="#">Moyu</a></li>
+                <li><a href="">ShengShou</a></li>
+            </ul>
+        </li>
+        <li><a href="./Tipos.html">Cubos</a>
+            <ul class="submenu">
+                <li><a href="">Cubos</a></li>
+                <li><a href="#">Piramides</a></li>
+                <li><a href="#">Megaminx</a></li>
+                <li><a href="">Serpiente</a></li>
+            </ul></li>
+        <li><a href="https://cstimer.net" >Cronometro</a></li>
+        <li><a href="./Creador.html">Creator</a></li>
     </ul>
-    <ul>
-        <li><img src="../img/cubo-de-rubik-logo-EC067C852F-seeklogo.com.png" alt="">Cube</li>
-        <li>Megaminx</li>
-        <li>Piraminx</li>
-        <li>Piramorphix</li>
-    </ul>
+    <br>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Brands</h2>
+            <ul class="options">
+                <li>
+                    <a href="./Rubick.html">
+                        <p><img src="../img/cubo-de-rubik-logo-EC067C852F-seeklogo.com.png" alt="Descripción de la imagen 1" class="option-img"></p>
+                        Cubes
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p><img src="../img/Pyraminx.webp" alt="Descripción de la imagen 2" class="option-img"></p>
+                        Piramids
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p><img src="../img/Megaminx.jpg" alt="Descripción de la imagen 3" class="option-img"></p>
+                        Megaminx
+                    </a>
+                </li>
+                <a href="#">
+                    <p><img src="../img/Snake.png" alt="Descripción de la imagen 3" class="option-img"></p>
+                    Snake
+                </a>
+            </li>
+            </ul>
+        </aside>
+    </div>
 </body>
 </html>
