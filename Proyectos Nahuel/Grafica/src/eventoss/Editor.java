@@ -1,4 +1,4 @@
-package eventos;
+package eventoss;
 
 public class Editor {
 	
