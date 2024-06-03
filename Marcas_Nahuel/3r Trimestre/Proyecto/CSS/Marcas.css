@@ -116,7 +116,7 @@ header {
     margin:  auto;
     text-align: left;
 }
-.contenido a{
+.contenido >a{
     display: flex;
     justify-content: center;
 }

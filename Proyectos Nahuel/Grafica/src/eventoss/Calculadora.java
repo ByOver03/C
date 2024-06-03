@@ -18,7 +18,7 @@ public class Calculadora {
     JButton btnReset;
 
     public Calculadora() {
-        frmPrincipal = Funciones.creaFormulario("Calculadora", 500, 300);
+        frmPrincipal = creaFormulario("Calculadora", 500, 300);
         pnlPrincipal = (JPanel) frmPrincipal.getContentPane();
 
         JPanel panelIzquierdo = new JPanel(new BorderLayout());
@@ -77,5 +77,13 @@ public class Calculadora {
         public void actionPerformed(ActionEvent e) {
             
         }
+    }
+    public static JFrame creaFormulario(String caption, int ancho, int alto){
+        JFrame frm = new JFrame();
+        frm.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        frm.setSize(ancho, alto);
+        frm.setLocationRelativeTo(null);
+        return frm;
+
     }
 }
