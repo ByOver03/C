@@ -1,8 +1,12 @@
-package eventoss;
+package eventos;
+
 
 public class Test {
+
 	public static void main(String[] args) {
-		new Calculadora();
 		
+		new Editor();
+
 	}
+
 }
