@@ -72,6 +72,7 @@ public class Calculadora {
         }
     }
 
+    @SuppressWarnings("unused")
     private class BtnEnterActionListener implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
