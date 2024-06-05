@@ -75,6 +75,16 @@ public class Editor {
 		
 		pnlPrincipal.add(txtNorte, BorderLayout.NORTH);
 		pnlPrincipal.add(txtAreaCentro, BorderLayout.CENTER);
+
+		//Menu
+		JMenuItem itemLeerFichero = new JMenuItem("Leer Fichero");
+		JMenuBar barMenuPrincipal = new JMenuBar();
+		JMenu menuFicheros = new JMenu("Menú");
+
+		menuFicheros.add(itemLeerFichero);
+		barMenuPrincipal.add(menuFicheros);
+		frmPrincipal.add(barMenuPrincipal);
+
 		btnEntrar.addActionListener(new btnEntrarActionListener());
 		btn1.addActionListener(new btn1ActionListener());
 		btn2.addActionListener(new btn2ActionListener());

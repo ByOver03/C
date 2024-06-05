@@ -3,3 +3,4 @@ Hacer un inicio de sesion con los parametros:
 {Nombre (texto[String]) DNI (texto[String]) EDAD (Texto[int])} Box
 Nivel(RadioButton [Basica(B) / Medio(M) / Superior(S)])
 {Aceptar(Boton) Cerrar(Boton)} Box
+Añadir menu para añadir alumno y borrar alumno a un fichero
