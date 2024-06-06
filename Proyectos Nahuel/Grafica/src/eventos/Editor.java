@@ -45,6 +45,7 @@ public class Editor {
 		gbcValores.anchor = GridBagConstraints.CENTER;
 		gbcValores.fill = GridBagConstraints.BOTH;
 		pnlBotones.add(btn1, gbcValores);
+
 		gbcValores.gridx = 1;
 		gbcValores.gridy = 0;
 		gbcValores.gridwidth = 1;
@@ -54,6 +55,7 @@ public class Editor {
 		gbcValores.anchor = GridBagConstraints.CENTER;
 		gbcValores.fill = GridBagConstraints.BOTH;
 		pnlBotones.add(btn2, gbcValores);
+
 		gbcValores.gridx = 0;
 		gbcValores.gridy = 1;
 		gbcValores.gridwidth = 2;
@@ -63,6 +65,7 @@ public class Editor {
 		gbcValores.anchor = GridBagConstraints.CENTER;
 		gbcValores.fill = GridBagConstraints.BOTH;
 		pnlBotones.add(btnMas, gbcValores);
+		
 		gbcValores.gridx = 0;
 		gbcValores.gridy = 2;
 		gbcValores.gridwidth = 2;
@@ -77,13 +80,13 @@ public class Editor {
 		pnlPrincipal.add(txtAreaCentro, BorderLayout.CENTER);
 
 		//Menu
-		JMenuItem itemLeerFichero = new JMenuItem("Leer Fichero");
-		JMenuBar barMenuPrincipal = new JMenuBar();
-		JMenu menuFicheros = new JMenu("Menú");
+		//JMenuItem itemLeerFichero = new JMenuItem("Leer Fichero");
+		//JMenuBar barMenuPrincipal = new JMenuBar();
+		//JMenu menuFicheros = new JMenu("Menú");
 
-		menuFicheros.add(itemLeerFichero);
-		barMenuPrincipal.add(menuFicheros);
-		frmPrincipal.add(barMenuPrincipal);
+		//menuFicheros.add(itemLeerFichero);
+		//barMenuPrincipal.add(menuFicheros);
+		//frmPrincipal.add(barMenuPrincipal);
 
 		btnEntrar.addActionListener(new btnEntrarActionListener());
 		btn1.addActionListener(new btn1ActionListener());
