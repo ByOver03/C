@@ -1,43 +1,76 @@
 package ejercicio1;
 
 import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.*;
 
 public class Alumno {
+
+    JFrame frm;
+    JPanel pnlPrincipal;
+
+    Box boxPrincipal;
+    Box boxAlumno;
+    Box boxNombre;
+    Box boxDNI;
+    Box boxEdad;
+    Box boxNivel;
+    Box boxButons;
+    Box boxMenu;
+
+    JLabel alumno;
+    JLabel nombre;
+    JLabel dni;
+    JLabel edad;
+    JLabel nivel;
+
+    JTextField txtNombre;
+    JTextField txtDNI;
+    JTextField txtEdad;
+
+    JRadioButton nivelBasica;
+    JRadioButton nivelMedio;
+    JRadioButton nivelSuperior;
+
+    JButton btnAceptar;
+    JButton btnCerrar;
+
+    JMenuBar mnu;
     public Alumno(){
-        JFrame frm = creaFormulario("Formulario Alumno", 300,200);
-        JPanel pnlPrincipal = (JPanel) frm.getContentPane();
+        frm = creaFormulario("Formulario Alumno", 300,200);
+        pnlPrincipal = (JPanel) frm.getContentPane();
 
-        Box boxPrincipal = Box.createVerticalBox();
+        boxPrincipal = Box.createVerticalBox();
 
-        Box boxAlumno= Box.createHorizontalBox();
-        Box boxNombre = Box.createHorizontalBox();
-        Box boxDNI = Box.createHorizontalBox();
-        Box boxEdad = Box.createHorizontalBox();
-        Box boxNivel = Box.createHorizontalBox();
-        Box boxButons = Box.createHorizontalBox();
-        Box boxMenu = Box.createHorizontalBox();
+        boxAlumno = Box.createHorizontalBox();
+        boxNombre = Box.createHorizontalBox();
+        boxDNI = Box.createHorizontalBox();
+        boxEdad = Box.createHorizontalBox();
+        boxNivel = Box.createHorizontalBox();
+        boxButons = Box.createHorizontalBox();
+        boxMenu = Box.createHorizontalBox();
 
-        JLabel alumno = new JLabel("Alumno");
+        alumno = new JLabel("Alumno");
         alumno.setFont(new Font("Comic Sans MS", Font.PLAIN, 15));
-        JLabel nombre = new JLabel("Nombre");
-        JLabel dni = new JLabel("DNI");
-        JLabel edad = new JLabel("Edad");
-        JLabel nivel = new JLabel("Nivel");
+        nombre = new JLabel("Nombre");
+        dni = new JLabel("DNI");
+        edad = new JLabel("Edad");
+        nivel = new JLabel("Nivel");
         
-        JTextField txtNombre = new JTextField();
-        JTextField txtDNI = new JTextField();
-        JTextField txtEdad = new JTextField();
+        txtNombre = new JTextField();
+        txtDNI = new JTextField();
+        txtEdad = new JTextField();
 
-        JRadioButton nivelBasica = new JRadioButton("B");
-        JRadioButton nivelMedio = new JRadioButton("M");
-        JRadioButton nivelSuperior = new JRadioButton("S");
+        nivelBasica = new JRadioButton("B");
+        nivelMedio = new JRadioButton("M");
+        nivelSuperior = new JRadioButton("S");
 
-        JButton aceptar = new JButton("Aceptar");
-        JButton cerrar = new JButton("Cerrar");
+        btnAceptar = new JButton("Aceptar");
+        btnCerrar = new JButton("Cerrar");
         
-        JMenuBar mnu = creaMenu();
+        mnu = creaMenu();
         
         boxAlumno.add(alumno);
         boxNombre.add(nombre);
@@ -50,8 +83,8 @@ public class Alumno {
         boxNivel.add(nivelBasica);
         boxNivel.add(nivelMedio);
         boxNivel.add(nivelSuperior);
-        boxButons.add(aceptar);
-        boxButons.add(cerrar);
+        boxButons.add(btnAceptar);
+        boxButons.add(btnCerrar);
 
         boxMenu.add(mnu);
 
@@ -94,3 +127,4 @@ public class Alumno {
         return mnb;
     }
 }
+
