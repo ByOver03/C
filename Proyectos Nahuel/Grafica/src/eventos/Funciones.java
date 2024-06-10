@@ -4,7 +4,7 @@ import javax.swing.*;
 
 public class Funciones {
 
-	static JFrame creaFormulario(String caption, int ancho, int alto) {
+	public static JFrame creaFormulario(String caption, int ancho, int alto) {
 		
 		JFrame formulario = new JFrame(caption);
 		formulario.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
