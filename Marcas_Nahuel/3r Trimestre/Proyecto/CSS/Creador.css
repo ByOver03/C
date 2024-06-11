@@ -69,16 +69,3 @@ header {
     display: flex;
     justify-content: center;
 }
-
-.contenido >ul{
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-}
-
-@media screen and(max-width: 600px ){
-    .contenido> ul img{
-        height: 50%;
-        width: auto
-    }
-}
