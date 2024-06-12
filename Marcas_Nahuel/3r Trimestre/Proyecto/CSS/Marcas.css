@@ -90,12 +90,7 @@ header {
     background-color: #444;
 }
 
-.contenido{
-    width: 90%;
-    margin:  auto;
-    text-align: left;
-}
-.contenido >a{
+.foto{
     display: flex;
     justify-content: center;
 }
@@ -110,7 +105,7 @@ header {
         padding: 0;
         display: flex;
         flex-direction:column;
-        justify-content: space-around;
+        text-align: start;
     }
     .submenu {
         list-style: none;
@@ -121,6 +116,13 @@ header {
         padding: 0;
         margin: 0;
         display: none;
+    }
+    .contenido{
+        width: 90%;
+        margin:  auto;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -146,6 +148,13 @@ header {
         margin: 0;
         display: none;
     }
+    .contenido{
+        width: 90%;
+        margin:  auto;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media only screen and (min-width:1025px){
@@ -170,5 +179,11 @@ header {
         padding: 0;
         margin: 0;
         display: none;
+    }
+    .contenido{
+        width: 95%;
+        margin-left: 30px;
+        display: flex;
+        
     }
 }
