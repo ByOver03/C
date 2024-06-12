@@ -1,0 +1,32 @@
+Glosario:
+    -Cloud computing: Conjunto de servicios ofrecidos remotamente sobre una red, normalmente Internet.
+    -IMAP4: Protocolo utilizado para acceder y descargar los correos desde los buzones de los servidores de correo, sin ser eliminados, a las aplicaciones de correo cliente
+    -POP3: Protocolo utilizado para acceder y descargar los correos desde los buzones de los servidores de correo a las apliacaciones de correo cliente.
+    -Redes P2P: Redes que se basan en la comparticion de datos entre equipos de igual a igual
+    -Sistemas gestores de bases de datos: Aplicaciones que tratan, admiinistran y gestionan bases de datos.
+    -SMTP: Protocolo empleado para enviar correos entre servidores de correos o desde un cliente de correo a un servidor de correo.
+    -Software antimalware: Son aplicaciones que intentan evitar la accion de distintos tipos de amenazas.
+    -Software base o de sistema: Software que actua de intermediario entre el usuario y el hardware, que administra y gestiona los recursos de hardware o software del sistema.
+    -Software de clonacion: Aplicaciones que permiten copiar los datos contenidos en particiones o discos y almacenarlos en otras particiones o medios, creando una replica exacta.
+    -Software propietario: Software que no cumpole con cualquiera de las libertades dels software libre, es decir, prohíbe o se debe autorizar su uso, distribucion o modificacion.
+Tipos de Software
+    Mas Empleados:
+        -Software Libre o "free":
+            -Libre para ejecutar con cualquier propositoi
+            -Libre oara estyduarki y adaptarlo a sus necesidades.
+            -Libre para distribuir copìas.
+            -Libre para modificarlo y mejorarlo
+            
+            Este Puede ser gratuito o no ya que no implica que pueda ser comercial, no es "free" de gratuito sino que es de libre uso.
+        -Software propietario: Cualquier software que no cumpla con cualquiera de las libertades del software libre, es decir, prohibe su uso, modificacion o distribucion.
+        -Software con co`pyleft: Software que garantiza una distribuccion sin restricciones añadidas. Las licencias con copyleft presentan un conjunto de cláusulas para distribuir programas con copyleft.
+        -Software de dominio publico: es todo software que no tiene derechos de autor.
+        -Software sin copyleft: Estas licencias permisivas `resentan flexibilidad en la distribucion. Ejemplos:
+            -Licencia BSD: FreeBSD, NetBSD.
+            -Licencia MIT: Bitcoin.
+            -Licencia APACHE: Android.
+        -Mozilla Public License: Se considera una licencia con copyleft debil ya que esta a medio camino de las licencias GPL y BSD. Esto se debe a que se puede modificar la licencia, pero su codigo debe permanecer bajo licencia MPL en su formato original.
+    Clasificacion por proposito:
+        -Software base o de sistema: Se encargan de actuar de intermedierio, gestor o administrador entre el usuario y el hardware. Ejemplos: BIOS, sistemas operativos, firmware de equipos, drivers de dispositivos, etc.
+        -Software de desarrollo de aplicaciones: Incluyen editores, compiladores, depuradores de codigo y entornos de desarrolo integrados(IDE).
+        -Software de aplicacion: oriantador a relizar tareas concretas, normal mente para un uso cotidiano: ejemplos: Software informatico, Software empresarial, Software de diseño, Navegadores, Software de seguridad, Juegos.
