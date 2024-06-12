@@ -37,6 +37,7 @@ public class Botones {
     }
 
     
+    @SuppressWarnings("unused")
     private class BtnUsuario implements ActionListener{
 
         @Override
