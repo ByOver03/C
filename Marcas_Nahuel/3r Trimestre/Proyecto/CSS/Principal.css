@@ -99,7 +99,7 @@ header {
     display: flex;
     justify-content: center;
 }
-@media (max-width: 700px ){
+@media only screen and (max-width: 700px ){
     .container{
         display: flex;
         flex-direction: column;
@@ -124,11 +124,10 @@ header {
     }
 }
 
-@media (min-width:701px) and (max-width: 1024px){
+@media only screen and (min-width:701px) and (max-width: 1024px){
     .container{
         display: flex;
-        align-items:row;
-        justify-content: space-around;
+        flex-direction: column;
     }
     .menu {
         list-style: none;
@@ -149,7 +148,7 @@ header {
     }
 }
 
-@media (min-width:1025px){
+@media only screen and (min-width:1025px){
     .container{
         display: flex;
         align-items: row;
