@@ -1,0 +1,58 @@
+Glosario:
+    -Botnet: Conjunto de sistemas infectados por malware que actuan conjnuntamente para realizar acciones malintencionadas como propagacion de virus, generacion de spam o ataques DDoS.
+    -Cloud computing: Conjunto de servicios ofrecidos remotamente sobre una red, normalmente Internet.
+    -IMAP4: Protocolo utilizado para acceder y descargar los correos desde los buzones de los servidores de correo, sin ser eliminados, a las aplicaciones de correo cliente.
+    -POP3: Protocolo utilizado para acceder y descargar los correos desde los buzones de los servidores de correo a las aplicaciones de correo cliente.
+    -Redes P2P: Redes que se basan en la comparticion de datos entre equipos de igual a igual.
+    -Sistemas gestores de bases de datos: Aplicaciones que tratan, administran y gestionan bases de datos.
+    -SMTP: Protocolo empleadop para enviar correos entre servidores de correos o desde un cliente de correo a un servidor de correo.
+    -Software antimalware: Son aplicaciones que intentan evitar la accion de distintos tipos de amenazas.
+    -Software base: Software que actua de intermediario entre el usuario y el hardware, que administra y gestiona los recursos hardware o software del sistema.
+    -Software de clonacion: Aplicaciones que permiten copiar los datos contenidos en particiones o discos y almacenarlos en otras particiones o medios, creando una replica exacte.
+    -Software propietario: Software que no cumple con cualquiera de las libertades del software libre, es decir, prohibe o se debe autorizar su uso, distribucion o modificacion.
+Tipos de software
+    -Clasificacion por licencia
+        -Software libre: El usuario dispone de cuatro libertades:
+            -Libertad para ejecutar con cualquier proposito el programa
+            -Libertad para estudiarlo y adaptarlo a sus necesidades. Por lo que se debe tener acceso al codigo fuente.
+            -Libertad paradistribuir copias.
+            -Libertad para modificarlo y mejorarlo. Asi se pone a disposicion de todo el publico para su beneficio
+        -Software propietario: CUalquier software que no cumpla con cualquiera de las libertades del software libre, es decir, prohibe o se debe autorizar su uso, distribucion o modificacion.
+        -Software con copyleft: Softwaree que garantiza ima distribucion sin restricciones aladidas. Estas presentan un conjunto de clausulas para distribuir programas con copyleft. El ejemplo mas caracteristico es GNU GPL. Resulta una forma de asegurarse de que las modificaciones o distribnuciones de dicho software sean tambien software libre.
+        -Software de dominio publico: Es todo software que no tiene derechos de autor. Si hablamos de codigo fuente de dominio publico, se puede decir que es software sin copyleft, por lo que podria degenerar en privativo.
+        -Software sin copyleft: El software distribuido o copiado no tiene por que permanecer con el mismo tipo de licencia que su antecesor. Por ello, estas licencias permisivas presentan flexibilidad en la disrtribucion.
+    -Clasificacion por proposito:
+        -Software base: incluye todos aquellos programas, aplicaciones o software que se encargan de actuar de intemediario, gestor o administrados entre el usuario y el hardware.
+        -Software de desarrollo de aplicaciones: Conjunto de softyware  necesario para el diseño, desarrollo o implementacion de software de sistema o de aplicacion.
+        -Software de aplicacion: orientados a realizar tareas concretas, normalmente para uso cotidiano por parte del usuario final.
+Herramientas ofimaticas
+    -Procesadores de texto: Son aplicaciones empleadas para trabajar con documentos de texto, a las que se puede dar formato y editar de forma rapìda y comoda. Los procesadores de texto permiten incorporar imagenes, graficos, tablas, indices, tablas de contenido, marcos y mas elementos que enriquecen y facilitan su tratamiento.
+    -Hojas de calculo: Las hojas de calculo son muy utilizadas para la edicion y manipulacion de datos, empleando formulas o funciones para su tratamiento. Una hija de calculo esta constituida por una tabla en la que las intersecciones entre filas y columnas constituyen las celdas. Estas pueden alojar datos y aplicarse calculos
+    -Software de presentacion: El software de presentacion facilita la creacion de documentos mediante diapositivas. En estas se pueden incorporar textos, imagenes, graficos, enlaces o videos. El documento de presentacion se potencia al dotar de animacion a las diapositivas,, añadir temas comunes, incorporar musica o sonidos, generar transiciones entre diapositivas, etc.
+    -Sistemas gestores de bases de datos: Estos sirven para almacenar datos de forma organizada y estructurada para su explotacion de forma facil y eficiente. Toda esta informacion relacionada entre si se denomina base de datos, y esta formada por uno o varios archivos. Las bases de datos se estructuran mediante tablas relacionadas, que son fruto de un esquema o diseño previo, conocido como modelo entidad-relacion.
+Herramientas de Internet
+    -Correo electronico: El correo electronico ha desplazado en muchos aspectos al correo postal, aportando eficiencia y rapdez en las comunicaciones a nivel global. No obstante, ambos son necesarios y cada uno ocupa un espacio diferente. El correo electronico es un servicio de intercambio de mensajes que hace uso de servidores de correo electronico para su gestion. este servicio es el mas empleado en Internet.
+    -Mensajeria instantanea: Las herramientas de mensajeria instantanea facilitan la comunicacion a traves de texto, imagenes, videos o sonido en tiempo real, y entre diferentes usuarios a traves de una red de comunicacion.
+        La mensajeria instantanea, que auna multitud de tecnologias y protocolos, es un concepto amplio, que crece dia a dia, tanto a nivel empresarial como personal. Suelen ser servicios donde una aplicacion cliente instalada en un dispositivo solicita autenticacion por parte de un usuario. Una vez conectado el usuario, el sistema de mensajeria habilita su lista de contactos, indicando quien se encuentra en linea para iniciar una comunicacion.
+    -Transferencia de ficheros: Ademas del protocolo FTP, unno de los mas extendidos e importantes, existen otros muchos protocolos, servicios y herramientas asociados a la transferenci de ficheros. Como por ejemploi, a traves de aplicaciones especificas, como WeTrasfer, el almacenamiento en la nube y su comparticion, etc.
+        Sin embargo, son muy empleadas las redes P2P. Estas se fundamentan en la comparticion de datos entre equipos de igual a igual, sin servidores intermedios. Por ello tambien se conocen como redes entre iguales, donde cada qequipo o noso de la red puede acrtuar de cliente a servidor al mismo tiempo.
+    -Computacion y almacenamiento en la nube: La computacion en la nube , tambien conocida como cloud computing, se entiende como un modelo formado por un conjunto de servicios ofrecidos sobre una red que atienden a clientes remotamente.
+        Se fundamenta en tecnologias que permiten a los clientes conseguir los servicios y la efectividad necesaria en cada uno de ellos bajo demanda.
+Documentacion tecnica
+    La documentacion de la vida del software es un procedimiento primordial para el correcto mantenimiento y explotacion del sistrema informatico. Tradicionalmente, el proceso de documentacion se percibe como una tarea tediosa y poco fructufera. Sin embargo, si esta se realiza como un procedimiento inherente a la instalacion y mantenimientode los programas obtendremos un menor tiempo de respusta en la resolucion de errores. Y tambien favorecera a un mayor conocimento de las aplicaciones por el administrador en pro de una mejor eficiencia en su ejecucion.
+    -Elaboracion de documentacion:
+        En el proceso de documentacion , se deben elaborar y complementar un coponjunto de modelos o formularios donde se reflejen los aspectos mas relevantes en la instalacion, mantenimiento, actualizacion y desinstalacion del software en cada equipo:
+            -Sistema operativo: Identificador, Fecha y hora de instalacion y actualizaciones. Detalles hardware originales del equipo, Sistema operativo, actualizaciones
+            -Aplicacion: Identificador, Nombre y version, fecha y hora de la instalacion y actualizaciones, Descripcion del software, Identificadores del sistema operativo y de la actualizacion del mismo nombre sobre el que se instala, Actualizaciones, Hardware vinculado, Desinstalacion.
+    -Metodos de busqueda de documentacion tecnica en Internet:
+        La busqueda fiable de documentacion tecnica para realizar tareas e instalacio, mantenimiento y explotacioon de aplicaciones se lleva a cabo a traves de las propias paginas proveedoras del software o tambien mediante buscadores de Internet.
+        Los buscadores relacionan paginas web con los contenidos de estas, para asi mostrar un listado de todas las paginas asociadas a los parametros de busqueda introducidos por los usuarios. Para ello, previamente los buscadores utilizan herramientas llamadas robots o spiders, que rastrean paginas web, crando una gran base de datos con la informacion que contienen. Los buscadores de Internet hacen consultas a estas bases de datos mediante motores de busqueda, mostrando los resultados en un orden segun un algoritmo. Los algoritmos utilizados tienen  en cuenta la frecuencia de busqueda de las paginas, asi como los enlaces publicitarios de pago por los que algunas empresas hacen uso para situarse en posiciones prioritarias.
+        Existen tercnicas de busquefa que permiten aumentar con el exito de localizacion de paginas web afines a las palabras clave, ajustando el acierto de los resultados debueltos por el buscador:
+            -Afinar em las palabras clave de busqueda, es decir, que estas informen claramente sobre las paginas que contengan resultados asociados a nuestro interes.
+            -Indicar el mayor numero de palabras clave posible y en el orden correcto, es decir, las mas relevantes al comienxo.
+            -Utilizar operadores logicos.
+        El buscador mas habitual presenta sugerencias de busqueda conforme se esta ascribniendo. Ademas, presenta una apariencia en la que , una vez se introducen las palabras clave y se pulsa "Buscar" mostrara:
+            -En l parte distintos filtros de busqueda. Ademas, aparecera el nuimero de resultados aproximados y el tiempo de busqueda.
+            -En la parte media, los diez primeros resultados ordenados en la primera pagina.
+            -En la parte baja, aparecen busquedas relacionadas con las palabras clave y un indice sobre otras paginas con resultados.
+        Si se desean utilizar busquedas avanzadas, se puede acceder a traves de la parte alta, pulsando en "Configuracion" y "Busqueda avanzada". Mostrara un formulario donde se pueden indicar multiples opciones para afinar la busqueda.
