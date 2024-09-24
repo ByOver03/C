@@ -1,23 +1,34 @@
+import java.util.ArrayList;
+
 public class Test {
     public static void main(String[] args) {
-        String p1="Jose";
-        String p2="Nahuel";
-        String p3="Ametller";
-        String p4="Bruno";
-
-        String[] procesos= {p1,p2,p3,p4};
-        System.out.println("FIFO");
-        for (String string : procesos) {
-            System.out.println(string);
-        }
-        System.out.println("Round Robin");
-        for (String string : procesos) {
-            for (int i = 2; i < 8; i++) {
-                if (string.length()<=i) {
-                    System.out.println(string);
-                }
-                i-=1;
-            }
+        ArrayList<Proceso> proces= new ArrayList<>();
+        
+        proces.add(new Proceso(1, 2000));
+        proces.add(new Proceso(2, 5000));
+        proces.add(new Proceso(3, 4000));
+        proces.add(new Proceso(4, 3000)); 
+        
+        for (Proceso proceso : proces) {
+            System.out.println(proceso.toString());
         }
     }
+    public static class Proceso {
+        int id;
+        int tiempo;
+
+        Proceso(int id, int tiempo){
+            this.id= id;
+            this.tiempo= tiempo;
+        }
+
+        @SuppressWarnings("static-access")
+        @Override
+        public String toString() {
+            String string="";
+            return string.valueOf(id);
+        }
+    
+    }
 }
+
