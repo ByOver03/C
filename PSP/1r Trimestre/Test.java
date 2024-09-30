@@ -9,9 +9,12 @@ public class Test {
         proces.add(new Proceso(3, 4000));
         proces.add(new Proceso(4, 3000)); 
         
+        System.out.println("FIFO");
         for (Proceso proceso : proces) {
             System.out.println(proceso.toString());
         }
+
+        System.out.println("Round Robin");
     }
     public static class Proceso {
         int id;
