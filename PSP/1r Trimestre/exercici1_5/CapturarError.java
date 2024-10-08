@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.IOException;
 
 public class CapturarError {
+    @SuppressWarnings("unused")
     public static void main(String[] args)throws IOException, InterruptedException  {
         Process p;
       
