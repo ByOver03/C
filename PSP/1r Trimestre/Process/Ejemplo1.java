@@ -4,6 +4,7 @@ import java.io.*;
 import java.util.Scanner;
 
 public class Ejemplo1 {
+    @SuppressWarnings("unused")
     public static void main(String[] args) throws IOException {
         // Le pedimos al usuario que quiere hacer
         System.out.println("Que desea hacer?:\n" +
@@ -33,7 +34,10 @@ public class Ejemplo1 {
             case 3:
                 p = new String[] { "shutdown", "/h" };
                 break;
+                
         }
         Process proceso = new ProcessBuilder(p).start();
+        s.close();
+        
     }
 }
