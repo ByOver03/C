@@ -1,15 +1,16 @@
 package ejercicioSyncronized;
 
 public class Puerta extends Thread{
-    boolean acceso;
+    boolean acceso = true;
     private int unidades = 100;
 
     public synchronized boolean pasar (){
         if (acceso){
+            acceso= false;
             notify();
             if(unidades >0){
                 System.out.println("El cliente ha entrado y se ha llevado una unidad");
-                unidades-=1;
+                unidades--;
             }else{
                 System.out.println("El cliente ha entrado pero no se ha llevado el producto");
             }
