@@ -6,7 +6,7 @@ public class Test {
         Puerta p = new Puerta();        
         for (int i = 0; i < 300; i++) {
             Cliente c = new Cliente(p);
-            c.start();
+            c.run();
         }
     }
 }
