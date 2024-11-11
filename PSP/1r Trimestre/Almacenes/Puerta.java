@@ -1,4 +1,4 @@
-package ejercicioSyncronized;
+package Almacenes;
 
 public class Puerta extends Thread{
     boolean acceso = true;

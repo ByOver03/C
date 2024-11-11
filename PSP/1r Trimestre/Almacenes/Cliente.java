@@ -1,4 +1,4 @@
-package ejercicioSyncronized;
+package Almacenes;
 
 public class Cliente extends Thread {
     Puerta p;

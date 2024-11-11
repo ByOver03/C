@@ -1,4 +1,4 @@
-package ejercicioSyncronized;
+package Almacenes;
 
 public class Test {
     public static void main(String[] args) {
