@@ -8,6 +8,7 @@ public class Cliente extends Thread {
         this.p = c;
     }
 
+    @SuppressWarnings("deprecation")
     public void run() {
         synchronized (this.p) {
             while (this.p.acceso == true) {
