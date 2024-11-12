@@ -7,16 +7,17 @@ public class Banca{
     //Se sacara un numero cada 3.000 milisegundos
     synchronized int sacarNumero(){
 
-        while (true) {
+        while (dinInicial!= 0) {
             int n = (int)(Math.random()*37);
             try {
                 Thread.sleep(3000);
             } catch (Exception e) {
             }
             notifyAll();
-            System.out.println(n);
+            System.out.println(n + " Dinero de la Banca: " + dinInicial);
             return n;
             
         }
+                return 0;
     }
 }

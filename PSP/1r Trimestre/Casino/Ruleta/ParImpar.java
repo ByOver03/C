@@ -18,12 +18,13 @@ public class ParImpar extends Thread{
         dineroInicial -= apuesta;
         b.dinInicial +=apuesta;
         int n = (int)(Math.random()*2)+1;
-        n=b.dinInicial/n;
-        if((b.dinInicial/n)== n){
+        int parimp=b.dinInicial/n;
+        String pi=(n==2)?"Apostando a los numeros pares":"A los numeros Impares" ;
+        if((b.dinInicial/n)== parimp){
             apuesta *= 2;
             dineroInicial += apuesta;
             b.dinInicial -=apuesta;
-            System.out.println(nombre +" Ha ganado la apuesta y gana " + apuesta + "€"+ " Con el numero : " + n);
+            System.out.println(nombre +" Ha ganado la apuesta y gana " + apuesta + "euros"+ pi);
         }else{
             System.out.println(nombre + " Ha perdido la apuesta" + " Con el numero : " + n);
         }

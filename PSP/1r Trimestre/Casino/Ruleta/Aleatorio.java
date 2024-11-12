@@ -21,7 +21,7 @@ public class Aleatorio extends Thread{
             apuesta *= 36;
             dineroInicial += apuesta;
             b.dinInicial-= apuesta;
-            System.out.println(nombre +" Ha ganado la apuestay gana " + apuesta + "€" + " Con el numero : " + n);
+            System.out.println(nombre +" Ha ganado la apuestay gana " + apuesta + " euros" + " Con el numero : " + n);
         }else{
             System.out.println(nombre + " Ha perdido la apuesta " + "Con el numero : " + n);
         }

@@ -21,7 +21,7 @@ public class Martingala extends Thread{
             if(b.sacarNumero() == n){
                 apuesta *= 36;
                 dineroInicial += apuesta;
-                System.out.println(nombre +" Ha ganado la apuestay gana " + apuesta + "€" +  " Con el numero : " + n);
+                System.out.println(nombre +" Ha ganado la apuestay gana " + apuesta + " euros" +  " Con el numero : " + n);
             }else{
                 apuesta *= 2;
                 dineroInicial-= apuesta;
