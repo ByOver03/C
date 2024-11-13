@@ -14,16 +14,25 @@ public class Aleatorio extends Thread{
     //Se elige un numero al azar del 1 al 36
     //Se apuestan 10€ y se devolveran 360€ al ganar
     void elegirnumero(){
-        dineroInicial -= apuesta;
-        b.dinInicial +=apuesta;
-        int n = (int)(Math.random()*36)+1;
-        if(b.sacarNumero() == n){
-            apuesta *= 36;
-            dineroInicial += apuesta;
-            b.dinInicial-= apuesta;
-            System.out.println(nombre +" Ha ganado la apuestay gana " + apuesta + " euros" + " Con el numero : " + n);
-        }else{
-            System.out.println(nombre + " Ha perdido la apuesta " + "Con el numero : " + n);
+        while (true) {
+            int n = 1;
+            while (0<= b.dinInicial) {
+                dineroInicial -= apuesta;
+                b.dinInicial +=apuesta;
+                n = (int)(Math.random()*36)+1;
+                if(b.sacarNumero() == n){
+                    apuesta *= 36;
+                    dineroInicial += apuesta;
+                    b.dinInicial-= apuesta;
+                    System.out.println(nombre +" Ha ganado la apuestay gana " + apuesta + " euros" + " Con el numero : " + n);
+                }else{
+                    System.out.println(nombre + " Ha perdido la apuesta " + "Con el numero : " + n);
+                }
+                try {
+                    Thread.sleep(3000);
+                } catch (Exception e) {
+                }
+            }
         }
         
     }

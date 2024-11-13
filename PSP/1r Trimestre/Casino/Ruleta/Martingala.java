@@ -14,10 +14,12 @@ public class Martingala extends Thread{
     //Se apostaran 10€ a un numero aleatorio
     //Si ganan 360€, Si pierden duplicaran lo apostado
     void martingala(){
+        int n = 1;
         dineroInicial -= apuesta;
         b.dinInicial +=apuesta;
-        int n = (int)(Math.random()*36)+1;
-        while (b.sacarNumero() == n) {
+        
+        while (0<= b.dinInicial) {
+            n = (int)(Math.random()*36)+1;
             if(b.sacarNumero() == n){
                 apuesta *= 36;
                 dineroInicial += apuesta;
@@ -27,6 +29,10 @@ public class Martingala extends Thread{
                 dineroInicial-= apuesta;
                 b.dinInicial -=apuesta;
                 System.out.println(nombre + " Ha perdido la apuesta y ahora apostara el doble"+ " Con el numero : " + n);
+            }
+            try {
+                Thread.sleep(3000);
+            } catch (Exception e) {
             }
         }
     }
