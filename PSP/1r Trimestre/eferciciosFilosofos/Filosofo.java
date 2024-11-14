@@ -13,18 +13,20 @@ public class Filosofo extends Thread {
 
     @Override
     public void run() {
-        if(this.uno.disponible && this.dos.disponible){
-            this.uno.cogido();
-            this.dos.cogido();
-            System.out.println( nombre +"esta Comiendo");
-            try {
-                Thread.sleep((int)(Math.random()*1000)+4000);
-            } catch (InterruptedException e) {
+        while (true) {
+            if(this.uno.disponible && this.dos.disponible){
+                this.uno.cogido();
+                this.dos.cogido();
+                System.out.println( nombre +"esta Comiendo");
+                try {
+                    Thread.sleep((int)(Math.random()*1000)+4000);
+                } catch (InterruptedException e) {
+                }
+                this.uno.libre();
+                this.dos.libre();
+            }else{
+                System.out.println(nombre + " Esta pensando...");
             }
-            this.uno.libre();
-            this.dos.libre();
-        }else{
-            System.out.println(nombre + " Esta pensando...");
         }
     }
 }

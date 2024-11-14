@@ -1,7 +1,7 @@
 package eferciciosFilosofos;
 
 public class Cubierto {
-    boolean disponible;
+    boolean disponible = true;
 
     synchronized void cogido(){
         try {
