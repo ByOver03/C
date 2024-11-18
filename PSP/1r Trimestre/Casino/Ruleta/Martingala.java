@@ -30,7 +30,10 @@ public class Martingala extends Thread{
                 b.dinInicial -=apuesta;
                 System.out.println(nombre + " Ha perdido la apuesta y ahora apostara el doble"+ " Con el numero : " + n);
             }
-            
+            try {
+                Thread.sleep(3000);
+            } catch (Exception e) {
+            }
         }
     }
 

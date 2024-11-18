@@ -28,7 +28,10 @@ public class Aleatorio extends Thread{
                 }else{
                     System.out.println(nombre + " Ha perdido la apuesta " + "Con el numero : " + n);
                 }
-                
+                try {
+                    Thread.sleep(3000);
+                } catch (Exception e) {
+                }
             }
         }
         

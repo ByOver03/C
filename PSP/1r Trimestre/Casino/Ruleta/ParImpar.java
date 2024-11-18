@@ -32,7 +32,10 @@ public class ParImpar extends Thread{
                 apuesta = 10;
                 System.out.println(nombre + " Ha perdido la apuesta" + " Con el numero : " + n);
             }
-            
+            try {
+                Thread.sleep(3000);
+            } catch (Exception e) {
+            }
         }
     }
 
