@@ -85,13 +85,13 @@ public class Jugador extends Thread {
                 } catch (InterruptedException e) {
                 }
             } else if (juego == Juego.MARTINGALA) {
-                apostarAleatorio();
+                apostarMartingala();
                 try {
                     sleep(3000);
                 } catch (InterruptedException e) {
                 }
             } else if (juego == Juego.PARIMPAR) {
-                apostarAleatorio();
+                apostarParImpar();
                 try {
                     sleep(3000);
                 } catch (InterruptedException e) {
@@ -118,7 +118,7 @@ public class Jugador extends Thread {
 
     void perder() {
         synchronized (banca) {
-            banca.ganarDinero(10);
+            banca.ganarDinero(apuesta);
         }
         System.out.println(
                 "Ludópata " + id + " ha perdido la apuesta con el número " + numA + ", Dinero actual: " + saldoInicial);
@@ -127,7 +127,7 @@ public class Jugador extends Thread {
     void numero0() {
         System.out.println("Ha salido 0, ludópata " + id + " ha perdido Dinero actual " + saldoInicial);
         synchronized (banca) {
-            banca.ganarDinero(10);
+            banca.ganarDinero(apuesta);
         }
     }
 }

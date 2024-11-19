@@ -15,7 +15,7 @@ public class Banca {
         }
         jugadoresEsperando++;
 
-        if (jugadoresEsperando < 12) {
+        if (jugadoresEsperando > 12) {
             try {
                 wait();
             } catch (InterruptedException e) {
