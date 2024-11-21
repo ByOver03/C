@@ -5,6 +5,7 @@ public class Banca {
     int dinero = 50000;
     int numero;
     int jugadoresEsperando = 0;
+    int jugadoresDisponibles = 12;
 
     synchronized int obtenerNumeroGanador() {
         while (!Ruleta.disponible) { 
@@ -15,14 +16,14 @@ public class Banca {
         }
         jugadoresEsperando++;
 
-        if (jugadoresEsperando > 12) {
+        if (jugadoresEsperando < jugadoresDisponibles) {
             try {
                 wait();
             } catch (InterruptedException e) {
             }
         } else {
             notifyAll();
-            jugadoresEsperando = 0; 
+            jugadoresEsperando = 0;
         }
 
         return numero;

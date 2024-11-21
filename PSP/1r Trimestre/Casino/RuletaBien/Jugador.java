@@ -8,6 +8,7 @@ public class Jugador extends Thread {
     int numA;
     int numS;
     Juego juego;
+    boolean disponible = true;
 
     Jugador(Banca banca, int id, Juego juego) {
         this.banca = banca;
@@ -99,6 +100,7 @@ public class Jugador extends Thread {
             }
         }
         System.out.println("El jugador o la banca se quedaron sin dinero");
+        banca.jugadoresDisponibles--;
     }
 
     void ganar() {
