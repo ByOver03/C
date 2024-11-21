@@ -18,19 +18,20 @@ public class Cliente extends Thread {
                 } catch (Exception e) {
                 }
             }
-        }
 
-        this.p.pasar();
-        if(this.cont <10){
-            if(this.p.unidades >0){
-                this.p.unidades--;
-                System.out.println("El Cliente " + getId() + " ha cogido un producto");
-            }else{
-                System.out.println("El cliente "+getId()+" ha entrado pero no ha cogido nada");
+            this.p.pasar();
+            if (this.cont < 10) {
+                if (this.p.unidades > 0) {
+                    this.p.unidades--;
+                    System.out.println("El Cliente " + getId() + " ha cogido un producto");
+                } else {
+                    System.out.println("El cliente " + getId() + " ha entrado pero no ha cogido nada");
+                }
+            } else {
+                System.out.println(
+                        "El cliente " + getId() + " ha intentado demasiadas veces entrar y se ha ido como un maricon");
             }
-        }else{
-            System.out.println("El cliente "+getId()+" ha intentado demasiadas veces entrar y se ha ido como un maricon");
+            this.p.salir();
         }
-        this.p.salir();
     }
 }
