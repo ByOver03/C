@@ -1,0 +1,96 @@
+CREATE TABLE [dbo].[carrecs](
+	[idcarrec] [uniqueidentifier] NOT NULL,
+	[idreserva] [uniqueidentifier] NULL,
+	[datacarrec] [datetime] NULL,
+	[importcarrec] [money] NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[idcarrec] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[carrecs]  WITH CHECK ADD FOREIGN KEY([idreserva])
+REFERENCES [dbo].[contracte] ([idreserva])
+GO
+
+CREATE TABLE [dbo].[client](
+	[dni] [varchar](255) NOT NULL,
+	[nom] [varchar](255) NULL,
+	[cognoms] [varchar](255) NULL,
+	[direccio] [varchar](255) NULL,
+	[poblacio] [varchar](255) NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[dni] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+
+
+CREATE TABLE [dbo].[contracte](
+	[idreserva] [uniqueidentifier] NOT NULL,
+	[datacontracte] [datetime] NULL,
+	[matricula] [varchar](255) NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[idreserva] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[contracte]  WITH CHECK ADD FOREIGN KEY([idreserva])
+REFERENCES [dbo].[reserva] ([idreserva])
+GO
+
+ALTER TABLE [dbo].[contracte]  WITH CHECK ADD FOREIGN KEY([matricula])
+REFERENCES [dbo].[vehicle] ([matricula])
+GO
+
+
+CREATE TABLE [dbo].[multas](
+	[idreserva] [uniqueidentifier] NULL,
+	[datacontracte] [date] NULL,
+	[matricula] [nchar](10) NULL
+) ON [PRIMARY]
+GO
+
+
+CREATE TABLE [dbo].[reserva](
+	[idreserva] [uniqueidentifier] NOT NULL,
+	[dni] [varchar](255) NULL,
+	[dataini] [datetime] NULL,
+	[datafi] [datetime] NULL,
+	[tipologia] [varchar](255) NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[idreserva] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[reserva]  WITH CHECK ADD FOREIGN KEY([dni])
+REFERENCES [dbo].[client] ([dni])
+GO
+
+
+CREATE TABLE [dbo].[usuarios](
+	[nom] [nchar](10) NULL,
+	[contrasenya] [nchar](10) NULL,
+	[fechadallo] [date] NULL
+) ON [PRIMARY]
+GO
+
+
+CREATE TABLE [dbo].[vehicle](
+	[matricula] [varchar](255) NOT NULL,
+	[tipologia] [varchar](255) NULL,
+	[marca] [varchar](255) NULL,
+	[model] [varchar](255) NULL,
+	[color] [varchar](255) NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[matricula] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
